@@ -1,0 +1,16 @@
+@import url(./CSS/NavBar.css);
+@import url(./CSS/Footer.css);
+@import url(./CSS/Main.css);
+@import url(./CSS/Contact.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol, ul,p, h1,h2{
+    margin: 0 ;
+}
+
