@@ -1,0 +1,242 @@
+.main-tickets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+  max-width: fit-content;
+  padding: 10px;
+  gap: 20px;
+}
+
+.section-card-tickets {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+  margin-top:20px ;
+}
+
+.card-tickets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  min-width: 230px;
+  height: 95%;
+  border-radius: 5px;
+  padding: 3px;
+
+}
+
+.est {
+ border:  2px solid rgb(113, 65, 209);
+}
+
+.trai {
+  border:  2px solid rgb(221, 75, 136);
+}
+
+.jr {
+  border:  2px solid rgb(216, 228, 56)
+}
+
+.text-card-tickets {
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+}
+
+.text-desc {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.text-sec-tickets {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(87, 86, 86);
+}
+
+.cont-title-tickets {
+  text-align: center;
+}
+
+.cont-title-tickets h5 {
+  font-size: 1rem;
+}
+
+.cont-title-tickets h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.form-tickets {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cont-inf-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inp-ticket {
+    width: 100%;
+    max-width: 375px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.468);
+    padding: 5px;
+}
+.inp-ticket::placeholder{
+    font-weight: 600;
+}
+.cont-cat-can {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cont-categ-tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 375px;
+}
+
+.label-tickets {
+    font-weight: 600;
+    align-self: self-start;
+}
+
+.total-Tickets {
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(81, 81, 255, 0.284);
+  color: rgb(19, 19, 247);
+  font-weight: 600;
+}
+
+.cont-btn-Tickets {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-tickets {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  background-color: rgb(149, 203, 66);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 540px) {
+    .main-tickets {
+        gap: 15px;
+      
+    }
+  .cont-inf-personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nombre apellido"
+    "correo correo";
+    gap: 10px;
+  }
+  .inp-ticket{
+    max-width: 100%;
+  }
+  .nombre-tick {
+    grid-area: nombre;
+  }
+  .apellido-tick {
+    grid-area: apellido;
+  }
+  .correo-tick {
+    grid-area: correo;
+  }
+  .cont-cat-can{
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .section-card-tickets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+  }
+}
+@media screen and (min-width:1500px) {
+    .main-tickets {
+      justify-content: start;
+      height: 88vh;
+      gap: 40px;
+    }
+    .section-card-tickets {
+        height: 290px;
+    }
+    .card-tickets {
+       font-size: 1.3rem;
+    }
+    .text-card-tickets {
+        font-size: 1.7rem;
+      }
+      .text-desc {
+        font-size: 1.2rem;
+      } 
+      .text-sec-tickets {
+        font-size: 1rem;
+      }
+      .cont-title-tickets {
+        text-align: center;
+
+      }
+      
+      .cont-title-tickets h5 {
+        font-size: 1.2rem;
+      }
+      
+      .cont-title-tickets h2 {
+        font-size: 1.9rem;
+        font-weight: 800;
+      }
+      .form-tickets {
+        gap: 25px;
+      }
+      .cont-inf-personal {
+        gap: 20px;
+      }
+     .inp-ticket {
+            height: 50px;
+      }
+      .cont-cat-can {
+        gap: 15px;
+      }
+
+      .btn-tickets {
+        height: 60px;
+      }
+}
