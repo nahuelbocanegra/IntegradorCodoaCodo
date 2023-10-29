@@ -19,6 +19,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../style.css" />
     <title>Codo a Codo</title>
 </head>
@@ -30,7 +31,7 @@
             <h5 class="text-logo">Conf Bs As</h5>
           </div>
           <ul class="ul-nav">
-            <li><a href="/index.html">La conferencia</a></li>
+            <li><a href="../index.html">La conferencia</a></li>
             <li><a href="#">Los oradores</a></li>
             <li><a href="#">El Lugar y la fecha</a></li>
             <li><a href="./Tickets.html">Conviertete en orador</a></li>
@@ -41,7 +42,7 @@
           </span>
         </nav>
       </header>
-<main class="main-tickets">
+<main class="main-tickets" id="main-tickets">
     <section class="section-card-tickets">
       <div class="card-tickets est">
         <h4  class="text-card-tickets">Estudiante</h4>
@@ -69,35 +70,43 @@
 
     <form action="" class="form-tickets">
         <div class="cont-inf-personal">
-            <input type="text" placeholder="Nombre"  class="inp-ticket nombre-tick">
-            <input type="text" placeholder="Apellido" class="inp-ticket apellido-tick" >
-            <input type="text" placeholder="Correo" class="inp-ticket correo-tick" >
+            <input type="text" placeholder="Nombre"  class="inp-ticket nombre-tick"  id="firstName"  >
+            <input type="text" placeholder="Apellido" class="inp-ticket apellido-tick" id="lastName" >
+            <input type="email" placeholder="Correo" class="inp-ticket correo-tick"  id="mail">
         </div>
         <div class="cont-cat-can">
           <div class="cont-categ-tickets">
             <label class="label-tickets" for="cantidad" >Cantidad</label>
-            <input type="text" placeholder="Cantidad"  class="inp-ticket"> 
+            <input type="text" placeholder="Cantidad"  id="cantidad" class="inp-ticket"> 
           </div>
           <div class="cont-categ-tickets">
-            <label class="label-tickets"  for="">Categoria</label>
-            <select name="" id="" class="inp-ticket">
-              <option value="">Estudiante</option>
-              <option value="">Trainee</option>
-              <option value="">Junior</option>
+            <label class="label-tickets"  for="select-tickets">Categoria</label>
+            <select name="" id="select-tickets" class="inp-ticket">
+              <option value="">Seleccione una Categoria</option>
+              <option value="Estudiante">Estudiante</option>
+              <option value="Trainee">Trainee</option>
+              <option value="Junior">Junior</option>
             </select>
           </div>
         </div>
     </form>
 
     <div class="total-Tickets">
-        <p>total a pagar : <span>0</span> $</p>
+        <p>total a pagar : <span id="total" > 0 </span> $</p>
     </div>
 
     <div class="cont-btn-Tickets">
-        <button class="btn-tickets">Borrar</button>
-        <button class="btn-tickets">Resumen</button>
+        <button class="btn-tickets" id="btn-borrar" >Borrar</button>
+        <button class="btn-tickets" id="btn-resumen" type="submit">Resumen</button>
     </div>
   </main>
+
+  <section class="noneFillData" id="sect-fillData">
+    <div class="cont-Data">
+      <span class="cont-icon" id="cont-icon"><i class='bx bx-x'></i></span>
+      <p>completar datos requeridos</p>
+    </div>
+  </section>
 
 <footer class="footer">
     <ul class="ul-footer">
@@ -110,6 +119,6 @@
       <li class="li-siete"><a href="">Estudiantes</a></li>
     </ul>
 </footer>
+   <script src="../index.js"></script>
 </body>
-<script src=""></script>
 </html>

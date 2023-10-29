@@ -161,19 +161,19 @@
   height: 250px;
 }
 .Steve{
-    background:url("../assets/img/steve.jpg");
+    background:url("../img/steve.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size:cover ;
 }
 .Bill{
-    background:url("../assets/img/bill.jpg");
+    background:url("../img/bill.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size:cover ;
 }
 .Ada{
-    background:url("../assets/img/ada.jpeg");
+    background:url("../img/ada.jpeg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size:cover ;
@@ -253,7 +253,7 @@ margin: 30px 0;
 
 }
 .img-oct{
-    background:url("../assets/img/honolulu.jpg");
+    background:url("../img/honolulu.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;

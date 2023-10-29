@@ -29,13 +29,13 @@
   height: 95%;
   border-radius: 5px;
   padding: 3px;
-
+  transition: background-color.5s ease-in-out;
+  
 }
 
 .est {
  border:  2px solid rgb(113, 65, 209);
 }
-
 .trai {
   border:  2px solid rgb(221, 75, 136);
 }
@@ -46,7 +46,6 @@
 
 .text-card-tickets {
   font-weight: 900;
-  color: rgb(0, 0, 0);
 }
 
 .text-desc {
@@ -60,6 +59,28 @@
   color: rgb(87, 86, 86);
 }
 
+.est:hover{
+   background-color: rgb(113, 65, 209);
+}
+.trai:hover {
+  background-color: rgb(221, 75, 136);
+}
+
+.jr:hover {
+ background-color:  rgb(216, 228, 56)
+}
+.card-tickets:hover 
+.text-desc {
+  color: #fff;
+}
+.card-tickets:hover 
+.text-card-tickets{
+  color: #fff;
+}
+.card-tickets:hover 
+.text-sec-tickets{
+  color: #fff;
+}
 .cont-title-tickets {
   text-align: center;
 }
@@ -239,4 +260,61 @@
       .btn-tickets {
         height: 60px;
       }
+}
+
+/*contenedor fill data*/
+.noneFillData{
+  display: none;
+}
+
+.sect-fillData{
+      position:fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        background-color: rgba(128, 128, 128, 0.845);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+.cont-Data{
+  width: 100%;
+  max-width: 310px;
+  height: 150px;
+ background-color: rgb(232, 131, 87);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+ box-shadow: 1px 1px 8px rgb(46, 45, 45);
+ position: relative;
+}
+
+.cont-Data>p{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.cont-icon{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:  50% ;
+  box-shadow: 1px 1px 8px rgba(46, 45, 45, 0.507);
+  
+
+}
+
+.bx-x{
+  color: rgb(232, 131, 87);
+  font-size: 1.4rem;
+
 }
