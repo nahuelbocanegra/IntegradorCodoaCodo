@@ -44,25 +44,30 @@
     align-items: center;
 }
 .bx-menu{
-   font-size: 2rem;
-   color: #fff;
+    font-size: 2rem;
+    color: #fff;
 }
+
 .ul-nav{
-    position: fixed;
+    position: absolute;
     top: 70px;
-    left: 0;
+    right: 0;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: 100vh;
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 30px;
     list-style: none;
     background-color: rgb(87, 86, 86);
-    padding: 10px;
+    padding: 20px;
+    z-index: 20;
 }
 
+.navVisible{
+    display: flex;
+}
 .ul-nav a{
     text-decoration: none;
     color: #ffffff;

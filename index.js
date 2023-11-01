@@ -1,3 +1,5 @@
+
+
 function getValorId(id) {
   return document.getElementById(id).value;
 }
@@ -69,6 +71,8 @@ function removeData(){
   section.classList.remove('sect-fillData');
   section.className='noneFillData'
 }
+
+
 
 document.getElementById("btn-resumen").addEventListener("click", resumen);
 document.getElementById("btn-borrar").addEventListener("click", borrar);
